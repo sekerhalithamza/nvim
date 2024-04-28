@@ -17,6 +17,7 @@ return {
 					"cssls",
 					"html",
 					"jsonls",
+					"clangd",
 				},
 			})
 		end,
@@ -45,6 +46,9 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.jsonls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.clangd.setup({
 				capabilities = capabilities,
 			})
 

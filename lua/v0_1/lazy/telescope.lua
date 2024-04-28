@@ -1,12 +1,12 @@
 return {
 	{
-		'nvim-telescope/telescope.nvim',
+		"nvim-telescope/telescope.nvim",
 		dependencies = {
-			'nvim-lua/plenary.nvim',
+			"nvim-lua/plenary.nvim",
 			"BurntSushi/ripgrep",
 		},
 		build = ":TSUpdate",
-		tag = '0.1.5',
+		tag = "0.1.5",
 		config = function()
 			require("telescope").setup({})
 			local builtin = require("telescope.builtin")
@@ -22,12 +22,12 @@ return {
 
 		config = function()
 			-- This is your opts table
-			require("telescope").setup {
+			require("telescope").setup({
 				extensions = {
 					["ui-select"] = {
-						require("telescope.themes").get_dropdown {
+						require("telescope.themes").get_dropdown({
 							-- even more opts
-						}
+						}),
 
 						-- pseudo code / specification for writing custom displays, like the one
 						-- for "codeactions"
@@ -42,9 +42,9 @@ return {
 						--      do the following
 						--   codeactions = false,
 						-- }
-					}
-				}
-			}
+					},
+				},
+			})
 			-- To get ui-select loaded and working with telescope, you need to call
 			-- load_extension, somewhere after setup function:
 			require("telescope").load_extension("ui-select")
