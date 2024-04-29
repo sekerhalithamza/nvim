@@ -10,6 +10,6 @@ return {
 	},
 
 	config = function()
-		vim.keymap.set("n", "<leader>e", "<CMD>Neotree toggle<CR>")
+		vim.keymap.set("n", "<leader>e", "<CMD>Neotree toggle position=right<CR>")
 	end,
 }
