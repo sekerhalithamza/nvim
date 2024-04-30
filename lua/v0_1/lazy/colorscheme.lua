@@ -3,9 +3,10 @@ function ColorMyPencils()
 		"carbonfox",
 		"onedark",
 		"rose-pine",
-		"tokyonigt-night",
+		"tokyonight-night",
 		"kanagawa-dragon",
 		"catppuccin",
+		"fleet",
 	}
 
 	local color = colors[math.random(1, #colors)]
@@ -41,5 +42,8 @@ return {
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
+	},
+	{
+		"felipeagc/fleet-theme-nvim",
 	},
 }
