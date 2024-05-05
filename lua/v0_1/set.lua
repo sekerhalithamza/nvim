@@ -11,10 +11,10 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
---vim.opt.swapfile = false
---vim.opt.backup = false
---vim.opt.undodir = ~/.config/nvim-undodir/
---vim.opt.undofile = true
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
+vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
